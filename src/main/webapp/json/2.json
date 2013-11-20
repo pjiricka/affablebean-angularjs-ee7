@@ -1,0 +1,38 @@
+[ 
+  { "category" : { "id" : 2,
+        "name" : "meats"
+      },
+    "id" : 5,
+    "lastUpdate" : 1346016098000,
+    "name" : "organic meat patties",
+    "orderedProductCollection" : [  ],
+    "price" : 2.29
+  },
+  { "category" : { "id" : 2,
+        "name" : "meats"
+      },
+    "id" : 6,
+    "lastUpdate" : 1346016098000,
+    "name" : "parma ham",
+    "orderedProductCollection" : [  ],
+    "price" : 3.4900000000000002
+  },
+  { "category" : { "id" : 2,
+        "name" : "meats"
+      },
+    "id" : 7,
+    "lastUpdate" : 1346016098000,
+    "name" : "chicken leg",
+    "orderedProductCollection" : [  ],
+    "price" : 2.5899999999999999
+  },
+  { "category" : { "id" : 2,
+        "name" : "meats"
+      },
+    "id" : 8,
+    "lastUpdate" : 1346016098000,
+    "name" : "sausages",
+    "orderedProductCollection" : [  ],
+    "price" : 3.5499999999999998
+  }
+]

@@ -1,0 +1,26 @@
+<div class="row-fluid">
+
+    <!-- left sidebar menu: -->
+    <div class="span2">
+        <ul class="nav nav-pills nav-stacked">
+            <li data-ng-class="{active:category == 1}"><a href="#/department/1">Dairy</a></li>
+            <li data-ng-class="{active:category == 2}"><a href="#/department/2">Meats</a></li>
+            <li data-ng-class="{active:category == 3}"><a href="#/department/3">Bakery</a></li>
+            <li data-ng-class="{active:category == 4}"><a href="#/department/4">Fruit&nbsp;&AMP;&nbsp;Veges</a></li>
+        </ul>
+    </div>
+    
+    <!-- table with department content -->
+    <div class="span9">
+        <table class="table table-striped">
+            <tr data-ng-repeat="product in products">
+                <td><img src="" data-ng-src="img/products/{{product.name}}.png"/></td>
+                <td>{{product.name}}</td>
+                <td>{{product.description}}</td>
+                <td>{{product.price}}</td>
+                <td><button class="btn btn-primary" data-ng-click="addToCart(product)">Add to Cart</button></td>
+            </tr>
+        </table>
+    </div>
+    
+</div>

@@ -1,0 +1,41 @@
+[ { "category" : { "id" : 1,
+        "name" : "dairy"
+      },
+    "id" : 1,
+    "lastUpdate" : 1346016098000,
+    "name" : "milk",
+    "orderedProductCollection" : [  ],
+    "price" : 1.7
+  },
+  { "category" : { "id" : 1,
+        "name" : "dairy"
+      },
+    "id" : 2,
+    "lastUpdate" : 1346016098000,
+    "name" : "cheese",
+    "orderedProductCollection" : [ { "orderedProductPK" : { "customerOrderId" : 1,
+              "productId" : 2
+            },
+          "quantity" : 2
+        } ],
+    "price" : 2.3900000000000001
+  },
+  { "category" : { "id" : 1,
+        "name" : "dairy"
+      },
+    "id" : 3,
+    "lastUpdate" : 1346016098000,
+    "name" : "butter",
+    "orderedProductCollection" : [  ],
+    "price" : 1.0900000000000001
+  },
+  { "category" : { "id" : 1,
+        "name" : "dairy"
+      },
+    "id" : 4,
+    "lastUpdate" : 1346016098000,
+    "name" : "free range eggs",
+    "orderedProductCollection" : [  ],
+    "price" : 1.76
+  }
+]

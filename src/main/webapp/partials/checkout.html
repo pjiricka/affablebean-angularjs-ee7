@@ -1,0 +1,87 @@
+<div class="row-fluid">
+    
+    <!-- checkout form: -->
+    <div class="span7 offset1" data-ng-hide="orderId">
+        <h1>Checkout</h1>
+        <p>In order to purchase the items in your shopping cart, please provide us with the following information:</p>
+        <form name="form" class="form-horizontal" novalidate>
+            <div class="control-group" data-ng-class="{error:(form.inputName.$dirty || showError) && form.inputName.$invalid}">
+                <label class="control-label" for="inputName">Name:</label>
+                <div class="controls">
+                    <input type="text" id="inputName" name="inputName" placeholder="Name" data-ng-model="purchase.name" required>
+                    <div data-ng-show="(form.inputName.$dirty || showError) && form.inputName.$invalid">
+                        <span class="help-inline">Name is required</span>
+                    </div>
+                </div>
+            </div>
+            <div class="control-group" data-ng-class="{error:(form.inputEmail.$dirty || showError) && form.inputEmail.$invalid}">
+                <label class="control-label" for="inputEmail">Email:</label>
+                <div class="controls">
+                    <input type="email" id="inputEmail" name="inputEmail" placeholder="Email" data-ng-model="purchase.email" required>
+                    <div data-ng-show="(form.inputEmail.$dirty || showError) && form.inputEmail.$invalid">
+                        <span class="help-inline">Valid email is required</span>
+                    </div>
+                </div>
+            </div>
+            <div class="control-group" data-ng-class="{error:(form.inputPhone.$dirty || showError) && form.inputPhone.$invalid}">
+                <label class="control-label" for="inputPhone">Phone:</label>
+                <div class="controls">
+                    <input type="text" id="inputPhone" name="inputPhone" placeholder="Phone" data-ng-model="purchase.phone" required>
+                    <div data-ng-show="(form.inputPhone.$dirty || showError) && form.inputPhone.$invalid">
+                        <span class="help-inline">Name is required</span>
+                    </div>
+                </div>
+            </div>
+            <div class="control-group" data-ng-class="{error:(form.inputAddress.$dirty || showError) && form.inputAddress.$invalid}">
+                <label class="control-label" for="inputAddress">Address:</label>
+                <div class="controls">
+                    <input type="text" id="inputAddress" name="inputAddress" placeholder="Street, Town, Post Code" data-ng-model="purchase.address" required>
+                    <div data-ng-show="(form.inputAddress.$dirty || showError) && form.inputAddress.$invalid">
+                        <span class="help-inline">Name is required</span>
+                    </div>
+                </div>
+            </div>
+            <div class="control-group" data-ng-class="{error:(form.inputCC.$dirty || showError) && form.inputCC.$invalid}">
+                <label class="control-label" for="inputCC">Credit Card:</label>
+                <div class="controls">
+                    <input type="text" id="inputCC" name="inputCC" placeholder="Credit Card Number" data-ng-model="purchase.cc" required>
+                    <div data-ng-show="(form.inputCC.$dirty || showError) && form.inputCC.$invalid">
+                        <span class="help-inline">Name is required</span>
+                    </div>
+                </div>
+            </div>
+            <button class="btn btn-large btn-primary" type="button" data-ng-click="submitPurchase(form.$invalid)">Submit Purchase</button>
+            <button class="btn" type="button" data-ng-click="cancelPurchase()">Cancel</button>            
+        </form>
+    </div>
+    
+    <!-- order confirmation message: -->
+    <div class="span7 offset1" data-ng-show="orderId">
+        <h1>Your  order has been processed.</h1>
+        <p>The order confirmation number is {{orderId}}</p>
+        <button class="btn btn-large btn-primary" type="button" data-ng-click="startShoppingAgain()">Forgot to buy something?</button>            
+    </div>
+    
+    <!-- order summary box: -->
+    <div class="span3" style="background-color: lightgray">
+        <ul>
+            <li>Next-day delivery is guaranteed</li>
+            <li>A 3.00 delivery surcharge is applied to all purchase orders</li>
+        </ul>
+        <table class="table">
+            <tr>
+                <td>Subtotal:</td>
+                <td>{{subtotal}}</td>
+            </tr>
+            <tr>
+                <td>Delivery surcharge:</td>
+                <td>{{surcharge}}</td>
+            </tr>
+            <tr>
+                <td>Total:</td>
+                <td><b>{{total}}</b></td>
+            </tr>
+        </table>
+    </div>
+    
+</div>

@@ -1,0 +1,38 @@
+[ 
+  { "category" : { "id" : 3,
+        "name" : "bakery"
+      },
+    "id" : 9,
+    "lastUpdate" : 1346016098000,
+    "name" : "sunflower seed loaf",
+    "orderedProductCollection" : [  ],
+    "price" : 1.8899999999999999
+  },
+  { "category" : { "id" : 3,
+        "name" : "bakery"
+      },
+    "id" : 10,
+    "lastUpdate" : 1346016098000,
+    "name" : "sesame seed bagel",
+    "orderedProductCollection" : [  ],
+    "price" : 1.1899999999999999
+  },
+  { "category" : { "id" : 3,
+        "name" : "bakery"
+      },
+    "id" : 11,
+    "lastUpdate" : 1346016098000,
+    "name" : "pumpkin seed bun",
+    "orderedProductCollection" : [  ],
+    "price" : 1.1499999999999999
+  },
+  { "category" : { "id" : 3,
+        "name" : "bakery"
+      },
+    "id" : 12,
+    "lastUpdate" : 1346016098000,
+    "name" : "chocolate cookies",
+    "orderedProductCollection" : [  ],
+    "price" : 2.3900000000000001
+  }
+]
